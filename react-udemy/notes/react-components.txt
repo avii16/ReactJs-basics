@@ -1,0 +1,95 @@
+// create a function such that function returns the html we want to render
+
+//create a jsx file in src folder
+
+import React from "react"
+
+function Heading()
+{
+  return <h1>allah hu akbar</h1>
+}
+
+export default Heading;
+
+//create a index js file
+// import jsk function into it
+
+import React from "react"
+import ReactDOM from "react-dom"
+import Heading from "../src/heading"
+
+ReactDOM.render(
+  <div>
+    <Heading/>
+  </div>
+  ,document.getElementById("root")
+  )
+
+
+// create multiple files i.e the components files and place them into the App.jsx -file
+
+// then place that app file into the index.js file
+
+
+// app/jsx
+import React from "react"
+import Heading from "../components/heading"
+import ULlist from "../components/Component"
+import Body from "../components/Body"
+function App(){
+  return(
+    <div>
+      <Heading />
+      <ULlist />
+      <Body />
+    </div>
+  )
+}
+export default App;
+
+
+//index js
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "../src/components/App"
+
+ReactDOM.render(
+  <div>
+    <App />
+  </div>
+  ,document.getElementById("root")
+  )
+
+
+
+//calc assignment
+
+
+import React from "react"
+
+function def(){
+  return "default one"
+}
+
+function add(a,b){
+  return a+b;
+}
+
+function sub(a,b){
+  return a-b;
+}
+
+function mul(a,b){
+  return a*b;
+}
+
+
+function div(a,b){
+  return a/b;
+}
+
+export default def;
+
+export {add,sub,mul,div}
+
+

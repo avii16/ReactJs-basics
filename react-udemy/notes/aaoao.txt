@@ -1,0 +1,77 @@
+import React from "react"
+import ReactDOM from "react-dom"
+
+const name="avishkar";
+const lname="ghumare";
+
+const customStyle={
+  color:"green",
+  fontSize:"100px",
+  border:"10px solid black"
+}
+
+
+
+ReactDOM.render(
+  <div>
+    <h1 style={customStyle} contentEditable="true">
+      Welcome {name+" "+lname}
+    </h1>
+    <p>why is this not working??</p>
+    <div>
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>      
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>      
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>      
+      <img alt="vadapav" className="food-img" style={{width:"200px",height:"200px"}} src="https://imgs.search.brave.com/19ztAgZNQNQfoKvMduNkBe2V3rraOZ6j78yZ0OZeCD8/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/UDFZa1NXXzJDUXAx/ejhuN08xak5nSGFE/NCZwaWQ9QXBp"></img>      
+    </div>
+    <p>Copyright @ {new Date().getFullYear()}</p>
+  </div>,
+  document.getElementById("root")
+)
+
+
+
+
+// assignment
+
+import React from "react"
+import ReactDOM from "react-dom"
+let greet;
+
+var c=new Date().getHours();
+
+const cop={
+  color:"",
+  fontSize:"50px",
+  borderBottom:"7px solid black",
+  padding:"20px"
+}
+
+if (c>12 & c<18){
+  greet="good afternoon";
+  cop.color="red";
+}
+else if (c>18 & c<21){
+  greet="good evening";
+  cop.color="black";
+}
+else if (c>21 & c<24){
+  greet="good night";
+  cop.color="green";
+}
+else{
+  greet="morning";
+  cop.color="blue";
+}
+
+ReactDOM.render(
+<div>
+  <h1 style={cop}>
+    {greet}
+  </h1>
+</div>,
+document.getElementById("root"))
+
